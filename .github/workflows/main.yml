@@ -1,0 +1,27 @@
+name: DEPLOY TO STAGING
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  vue-deploy:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+      - name: Installing project dependencies
+      - run: npm install
+      - name: Building the project
+      - run: npm run build
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+           server: ${{ secrets.FTP_SERVER }}
+           username: ${{ secrets.FTP_USERNAME }}
+           password: ${{ secrets.FTP_PASSWORD }}
+           port: 21
+           git-ftp-args: --insecure
+           server-dir: public_html/wchallenge_fe/
