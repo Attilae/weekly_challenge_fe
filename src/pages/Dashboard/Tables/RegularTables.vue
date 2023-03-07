@@ -224,10 +224,9 @@ export default {
       ChallengeService.list()
         .then(response => {
           this.challenges = response.list.data;
-          console.log(response);
         })
         .catch(e => {
-          console.log(e);
+          //console.log(e);
         });
     },
   },

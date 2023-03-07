@@ -41,10 +41,10 @@ export default {
       ChallengeService.application(this.$route.params.id)
         .then(response => {
           this.application = response.application.data;
-          console.log(response);
+          
         })
         .catch(e => {
-          console.log(e);
+          //console.log(e);
         });
     },
   },

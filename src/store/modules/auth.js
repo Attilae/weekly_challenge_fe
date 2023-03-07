@@ -32,7 +32,6 @@ export default {
 
   actions: {
     login(context, payload) {
-      console.log(payload)
       return vueAuth.login(payload.user, payload.requestOptions).then(response => {
         context.commit("isAuthenticated", {
           isAuthenticated: vueAuth.isAuthenticated()

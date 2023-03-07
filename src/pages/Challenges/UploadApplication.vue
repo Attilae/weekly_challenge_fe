@@ -53,7 +53,6 @@ export default {
   },
   methods: {
     saveApplication() {
-      console.log()
       var data = {
         url: this.application.url,
         user_id: this.$store.getters['profile/me'].id,
@@ -65,7 +64,7 @@ export default {
           this.submitted = true;
         })
         .catch(e => {
-          console.log(e);
+          //console.log(e);
         });
     },
   },
