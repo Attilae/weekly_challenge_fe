@@ -28,7 +28,7 @@
           :link="{ name: 'Dashboard', icon: 'dashboard', path: '/dashboard' }"
         />
 
-        <sidebar-item opened :link="{ name: 'Examples (API)', image: image }">
+        <!--sidebar-item opened :link="{ name: 'Examples (API)', image: image }">
           <sidebar-item
             :link="{ name: 'User Profile', path: '/examples/user-profile' }"
           />
@@ -38,16 +38,16 @@
               path: '/examples/user-management/list-users',
             }"
           />
-        </sidebar-item>
+        </sidebar-item-->
 
-        <sidebar-item
+        <!--sidebar-item
           v-if="$route.meta.rtlActive"
           :link="{
             name: 'الجداول',
             icon: 'content_paste',
             path: '/components/table',
           }"
-        />
+        /-->
         <sidebar-item
           :link="{
             name: 'Challenges',

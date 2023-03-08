@@ -1,7 +1,7 @@
 <template>
   <div class="user">
     <div class="photo">
-      <img :src="avatar" alt="avatar" />
+      <img src="/img/avatar.png" alt="avatar" style="width: 27px;" />
     </div>
     <div class="user-info">
       <a

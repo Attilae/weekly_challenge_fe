@@ -1,6 +1,6 @@
 <template>
   <div class="md-layout">
-    <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
+    <!--div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
       <stats-card header-color="blue">
         <template slot="header">
           <div class="card-icon">
@@ -19,8 +19,8 @@
           </div>
         </template>
       </stats-card>
-    </div>
-    <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
+    </div-->
+    <!--div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
       <stats-card header-color="rose">
         <template slot="header">
           <div class="card-icon">
@@ -39,8 +39,8 @@
           </div>
         </template>
       </stats-card>
-    </div>
-    <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
+    </div-->
+    <!--div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
       <stats-card header-color="green">
         <template slot="header">
           <div class="card-icon">
@@ -59,8 +59,8 @@
           </div>
         </template>
       </stats-card>
-    </div>
-    <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
+    </div-->
+    <!--div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
       <stats-card header-color="warning">
         <template slot="header">
           <div class="card-icon">
@@ -79,8 +79,8 @@
           </div>
         </template>
       </stats-card>
-    </div>
-    <div
+    </div-->
+    <!--div
       class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33"
     >
       <chart-card
@@ -115,8 +115,8 @@
           </div>
         </template>
       </chart-card>
-    </div>
-    <div
+    </div-->
+    <!--div
       class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33"
     >
       <chart-card
@@ -153,8 +153,8 @@
           </div>
         </template>
       </chart-card>
-    </div>
-    <div
+    </div-->
+    <!--div
       class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33"
     >
       <chart-card
@@ -187,7 +187,7 @@
           </div>
         </template>
       </chart-card>
-    </div>
+    </div-->
 
     <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
       <md-card>
@@ -212,7 +212,7 @@
       </md-card>
     </div>
 
-    <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
+    <!--div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
       <nav-tabs-card>
         <template slot="content">
           <span class="md-nav-tabs-title">Tasks</span>
@@ -289,7 +289,7 @@
           </md-tabs>
         </template>
       </nav-tabs-card>
-    </div>
+    </div-->
 
   </div>
 </template>
@@ -304,9 +304,9 @@ import {
 
 export default {
   components: {
-    StatsCard,
-    ChartCard,
-    NavTabsCard
+    //StatsCard,
+    //ChartCard,
+    //NavTabsCard
   },
 
   data() {

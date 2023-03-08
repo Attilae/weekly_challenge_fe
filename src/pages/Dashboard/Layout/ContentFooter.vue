@@ -10,13 +10,7 @@
         </ul>
       </nav>
       <div class="copyright text-center">
-        &copy; {{ new Date().getFullYear() }},
-        made with <i class="fa fa-heart heart"></i>
-        by
-        <a href="https://www.creative-tim.com/?ref=mdp-vuejs-api" target="_blank">Creative Tim</a>
-        and
-        <a href="https://www.updivision.com/?ref=mdp-vuejs-api" target="_blank">UPDIVISION</a>
-        for a better web.
+        &copy; {{ new Date().getFullYear() }}        
       </div>
     </div>
   </footer>

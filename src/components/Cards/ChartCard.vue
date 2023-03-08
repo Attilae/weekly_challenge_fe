@@ -105,13 +105,13 @@ export default {
     }
   },
   mounted() {
-    this.updateChartId();
+    /*this.updateChartId();
     import("chartist").then(Chartist => {
       let ChartistLib = Chartist.default || Chartist;
       this.$nextTick(() => {
-        this.initChart(ChartistLib);
+        //this.initChart(ChartistLib);
       });
-    });
+    });*/
   }
 };
 </script>

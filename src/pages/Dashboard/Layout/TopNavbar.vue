@@ -23,7 +23,7 @@
 
         <div class="md-collapse">
           <div class="md-autocomplete">
-            <md-autocomplete
+            <!--md-autocomplete
               class="search"
               v-model="selectedEmployee"
               :md-options="employees"
@@ -31,7 +31,7 @@
             >
               <label v-if="$route.meta.rtlActive">بحث...</label>
               <label v-else>Search...</label>
-            </md-autocomplete>
+            </md-autocomplete-->
           </div>
           <md-list>
             <md-list-item href="#/">
@@ -39,7 +39,7 @@
               <p class="hidden-lg hidden-md">Dashboard</p>
             </md-list-item>
 
-            <li class="md-list-item">
+            <!--li class="md-list-item">
               <a
                 @click="goToNotifications"
                 class="md-list-item-router md-list-item-container md-button-clean dropdown"
@@ -65,7 +65,7 @@
                   </drop-down>
                 </div>
               </a>
-            </li>
+            </li-->
 
             <md-list-item @click="goToUsers">
               <i class="material-icons">person</i>

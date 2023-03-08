@@ -21,10 +21,6 @@
             :class="{ 'off-canvas-sidebar': responsive }"
           >
             <md-list>
-              <md-list-item href="/register" @click="linkClick">
-                <md-icon>person_add</md-icon>
-                Register
-              </md-list-item>
               <md-list-item href="/login" @click="linkClick" v-if="!$store.getters['isAuthenticated']">
                 <md-icon>fingerprint</md-icon>
                 Login
@@ -55,9 +51,6 @@
             <nav>
               <ul>
                 <li>
-                  <a href="https://www.creative-tim.com" target="_blank">
-                    
-                  </a>
                 </li>
                 
               </ul>
