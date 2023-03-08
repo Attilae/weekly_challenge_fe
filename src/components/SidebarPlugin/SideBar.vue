@@ -7,10 +7,14 @@
     :style="sidebarStyle"
   >
     <div class="logo">
-      <a href="/" class="simple-text logo-mini" target="_blank">
+      <a href="https://www.creative-tim.com" class="simple-text logo-mini" target="_blank">
         <div style="padding: 4px 0;">
           WC
         </div>
+      </a>
+      <a href="https://www.creative-tim.com" class="simple-text logo-normal" target="_blank">
+        <template v-if="$route.meta.rtlActive">{{ rtlTitle }}</template>
+        <template v-else>{{ title }}</template>
       </a>
 <!--      <div class="navbar-minimize">-->
 <!--        <md-button-->
