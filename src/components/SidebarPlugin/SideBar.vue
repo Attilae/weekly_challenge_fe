@@ -7,14 +7,10 @@
     :style="sidebarStyle"
   >
     <div class="logo">
-      <a href="https://www.creative-tim.com" class="simple-text logo-mini" target="_blank">
+      <a href="/" class="simple-text logo-mini" target="_blank">
         <div style="padding: 4px 0;">
-          CT
+          WC
         </div>
-      </a>
-      <a href="https://www.creative-tim.com" class="simple-text logo-normal" target="_blank">
-        <template v-if="$route.meta.rtlActive">{{ rtlTitle }}</template>
-        <template v-else>{{ title }}</template>
       </a>
 <!--      <div class="navbar-minimize">-->
 <!--        <md-button-->
@@ -59,7 +55,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Creative Tim"
+      default: "Weekly Challenge"
     },
     rtlTitle: {
       type: String,
