@@ -4,6 +4,8 @@ import { VueAuthenticate } from "vue-authenticate";
 
 import axios from "axios";
 import VueAxios from "vue-axios";
+
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = `*`;
 Vue.use(VueAxios, axios);
 
 const vueAuth = new VueAuthenticate(Vue.prototype.$http, {
