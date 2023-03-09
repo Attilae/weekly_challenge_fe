@@ -1,5 +1,5 @@
 module.exports = {
     devServer: {
-        proxy: 'http://weeklychallenge.erdeiattila.com/public/',
+        proxy: 'https://erdeiattila.com/wchallenge/public/',
     }
 }
