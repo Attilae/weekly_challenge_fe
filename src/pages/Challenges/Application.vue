@@ -13,8 +13,7 @@
             <md-table-row>            
               <md-table-cell md-label="ID">{{ application.id }}</md-table-cell>              
               <md-table-cell md-label="Name">
-              <vue-friendly-iframe :src="application.url" @load="onLoad"></vue-friendly-iframe>
-            
+              <vue-friendly-iframe :src="application.url" @load="onLoad"></vue-friendly-iframe>            
               </md-table-cell>              
             </md-table-row>
             
@@ -45,7 +44,6 @@ export default {
       ChallengeService.application(this.$route.params.id)
         .then(response => {
           this.application = response.application.data;
-          
         })
         .catch(e => {
           //console.log(e);
