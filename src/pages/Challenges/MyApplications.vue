@@ -39,7 +39,6 @@ export default {
       ChallengeService.myApplications(this.$route.params.id)
         .then(response => {
           this.applications = response.applications.data.applications;
-          console.log(this.applications)
         })
         .catch(e => {
           //console.log(e);
