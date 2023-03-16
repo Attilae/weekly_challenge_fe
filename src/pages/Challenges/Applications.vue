@@ -18,9 +18,9 @@
             <md-table-row v-for="(application, index) in applications" :key="index">            
               <md-table-cell md-label="ID">{{ application.id }}</md-table-cell>              
               <md-table-cell md-label="Name">{{ application.user.name }}</md-table-cell>              
-              <router-link :to="{ path: `/challenges/application/${application.id}` }" >
-                <md-table-cell md-label="View">View</md-table-cell>
-              </router-link>
+              <md-table-cell md-label="Listen">
+                <router-link :to="{ path: `/challenges/application/${application.id}` }">Listen</router-link>
+              </md-table-cell> 
             </md-table-row>
             
           </md-table>

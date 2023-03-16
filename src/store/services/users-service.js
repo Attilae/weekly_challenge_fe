@@ -70,11 +70,21 @@ function update(user) {
     }
   };
 
-  return axios.patch(`${url}/users/${user.id}`, payload, options)
+  return axios.post(`${url}/user/change-password`, user, options)
     .then(response => {
       return jsona.deserialize(response.data);
     });
 }
+
+function changePassword(data) {
+  return axios.post(`${url}/user/change-password`, data)
+    .then(response => {
+      return {
+        user: response.data
+      };
+    });
+}
+
 
 function destroy(id) {
   const options = {
@@ -103,6 +113,7 @@ export default {
   add,
   update,
   destroy,
-  upload
+  upload,
+  changePassword
 };
 

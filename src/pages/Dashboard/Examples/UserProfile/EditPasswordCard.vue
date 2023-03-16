@@ -80,7 +80,7 @@
           this.$refs['password_form'].reset()
         } catch (e) {
           await this.$store.dispatch("alerts/error", "Oops, something went wrong!")
-          this.setApiValidation(e.response.data.errors)
+          //this.setApiValidation(e.response.errors)
         }
 
       }

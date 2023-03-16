@@ -88,7 +88,7 @@ let componentsMenu = {
 };
 
 let examplesMenu = {
-  path: "/examples",
+  path: "/users",
   component: DashboardLayout,
   name: "Examples",
   children: [

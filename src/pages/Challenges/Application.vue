@@ -12,7 +12,8 @@
           <md-table table-header-color="green">
             <md-table-row>            
               <md-table-cell md-label="ID">{{ application.id }}</md-table-cell>              
-              <md-table-cell md-label="Name">{{ application.url }}</md-table-cell>              
+              <md-table-cell md-label="Name">
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" :src=application.url></iframe></md-table-cell>              
             </md-table-row>
             
           </md-table>

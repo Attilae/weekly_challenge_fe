@@ -193,21 +193,21 @@
       <md-card>
         <md-card-header class="md-card-header-text md-card-header-warning">
           <div class="card-text">
-            <h4 class="title">Employees Stats</h4>
+            <h4 class="title">Stats</h4>
             <p class="category">
-              New employees on 15th September, 2016
+              Coming soon...
             </p>
           </div>
         </md-card-header>
         <md-card-content>
-          <md-table v-model="users" table-header-color="orange">
+          <!--md-table v-model="users" table-header-color="orange">
             <md-table-row slot="md-table-row" slot-scope="{ item }">
               <md-table-cell md-label="Id">{{ item.id }}</md-table-cell>
               <md-table-cell md-label="Name">{{ item.name }}</md-table-cell>
               <md-table-cell md-label="Salary">{{ item.salary }}</md-table-cell>
               <md-table-cell md-label="Country">{{ item.country }}</md-table-cell>
             </md-table-row>
-          </md-table>
+          </md-table-->
         </md-card-content>
       </md-card>
     </div>
