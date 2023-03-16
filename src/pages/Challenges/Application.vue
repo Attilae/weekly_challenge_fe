@@ -13,7 +13,9 @@
             <md-table-row>            
               <md-table-cell md-label="ID">{{ application.id }}</md-table-cell>              
               <md-table-cell md-label="Name">
-              <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" :src=application.url></iframe></md-table-cell>              
+              <vue-friendly-iframe :src="application.url" @load="onLoad"></vue-friendly-iframe>
+            
+              </md-table-cell>              
             </md-table-row>
             
           </md-table>
@@ -24,6 +26,7 @@
 </template>
 <script>
 import ChallengeService from "../../store/services/challenge-service";
+
 export default {      
   props: ['id'],
   data() {

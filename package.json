@@ -64,6 +64,7 @@
     "sass": "^1.43.4",
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0",
+    "vue-friendly-iframe": "^0.20.0",
     "vue-template-compiler": "2.6.11"
   }
 }

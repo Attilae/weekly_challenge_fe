@@ -20,6 +20,10 @@ import Chartist from "chartist";
 import VueAxios from "vue-axios";
 import DashboardPlugin from "./material-dashboard";
 
+import VueFriendlyIframe from 'vue-friendly-iframe';
+Vue.use(VueFriendlyIframe);
+
+
 // plugin setup
 Vue.use(DashboardPlugin);
 Vue.use(VueAxios, axios);

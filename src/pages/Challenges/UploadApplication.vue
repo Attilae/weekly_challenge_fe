@@ -52,20 +52,22 @@ export default {
     };
   },
   methods: {
-    saveApplication() {
+    async saveApplication() {
       var data = {
         url: this.application.url,
         user_id: this.$store.getters['profile/me'].id,
         challenge_id: this.$route.params.id
       };
       ChallengeService.saveApplication(data)
-        .then(response => {
+        .then(response => {          
           this.tutorial.id = response.data.id;
           this.submitted = true;
         })
         .catch(e => {
           //console.log(e);
         });
+        await this.$store.dispatch("alerts/success", "Uploaded successfully.")
+        this.application.url = ""
     },
   },
   mounted() {
