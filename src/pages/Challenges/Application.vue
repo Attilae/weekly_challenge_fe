@@ -11,12 +11,10 @@
         <md-card-content>
           <md-table table-header-color="green">
             <md-table-row>            
-              <md-table-cell md-label="ID">{{ application.id }}</md-table-cell>              
               <md-table-cell md-label="Name">
-              <vue-friendly-iframe :src="application.url" @load="onLoad"></vue-friendly-iframe>            
+                <vue-friendly-iframe style="width:100%" :src="application.url" @load="onLoad"></vue-friendly-iframe>            
               </md-table-cell>              
             </md-table-row>
-            
           </md-table>
         </md-card-content>
       </md-card>

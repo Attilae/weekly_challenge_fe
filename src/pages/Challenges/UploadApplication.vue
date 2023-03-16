@@ -9,7 +9,7 @@
             <md-icon>perm_identity</md-icon>
           </div>
           <h4 class="title">
-            New Application
+            Apply to the challenge
           </h4>
         </md-card-header>
         <md-card-content>

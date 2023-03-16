@@ -26,6 +26,7 @@ import Challenges from "@/pages/Challenges/Challenges.vue";
 import Applications from "@/pages/Challenges/Applications.vue";
 import Application from "@/pages/Challenges/Application.vue";
 import UploadApplication from "@/pages/Challenges/UploadApplication.vue";
+import MyApplications from "@/pages/Challenges/MyApplications.vue";
 
 // Maps pages
 import FullScreenMap from "@/pages/Dashboard/Maps/FullScreenMap.vue";
@@ -103,7 +104,13 @@ let examplesMenu = {
       name: "List Users",
       components: { default: ListUserPage },
       meta: { middleware: auth }
-    }
+    },
+    {
+      path: "applications",
+      name: "My Applications",
+      components: { default: MyApplications },
+      meta: { middleware: auth }
+    },
   ]
 };
 

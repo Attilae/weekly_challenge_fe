@@ -35,6 +35,12 @@
                 </a>
               </li>
               <li>
+                <a @click="goToApplications">
+                  <span class="sidebar-mini">MA</span>
+                  <span class="sidebar-normal">My Applications</span>
+                </a>
+              </li>
+              <li>
                 <a v-if="$route.meta.rtlActive" @click="logout">
                   <span class="sidebar-mini">و</span>
                   <span class="sidebar-normal">إعدادات</span>
@@ -79,6 +85,9 @@ export default {
     },
     goToProfile() {
       this.$router.push({name: "User Profile"})
+    },
+    goToApplications() {
+      this.$router.push({name: "My Applications"})
     },
     logout() {
       this.$store.dispatch("logout");

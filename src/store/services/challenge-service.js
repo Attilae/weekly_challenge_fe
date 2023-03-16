@@ -39,6 +39,15 @@ function applications(id) {
     });
 }
 
+function myApplications() {
+  return axios.get(`${url}/applications/me`)
+    .then(response => {
+      return {
+        applications: response.data
+      };
+    });
+}
+
 function application(id) {
   /*const options = {
     params: params,
@@ -85,5 +94,6 @@ export default {
     get,
     applications,
     application,
-    saveApplication
+    saveApplication,
+    myApplications
   };
