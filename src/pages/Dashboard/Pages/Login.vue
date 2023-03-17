@@ -57,8 +57,8 @@
     mixins: [formMixin],
 
     data: () => ({
-      email: "admin@jsonapi.com",
-      password: "secret",
+      email: "email@email",
+      password: "",
     }),
 
     methods: {

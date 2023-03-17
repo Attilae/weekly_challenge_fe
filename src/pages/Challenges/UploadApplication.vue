@@ -25,6 +25,16 @@
             <md-input v-model="application.url" type="text" />
             <!--validation-error :errors="apiValidationErrors.url" /-->
           </md-field>
+          <md-field
+            class="form-group md-invalid"
+            slot="inputs"
+            style="margin-bottom: 28px"
+          >
+            <md-icon>Description</md-icon>
+            <label>Description...</label>
+            <md-input v-model="application.description" type="text" />
+            <!--validation-error :errors="apiValidationErrors.url" /-->
+          </md-field>
           <md-card-actions>
             <md-button type="submit">
             Save
@@ -46,7 +56,8 @@ export default {
     return {
       application: {
         user_id: null,
-        url: "",        
+        url: "",
+        description: ""
       },
       submitted: false
     };
@@ -55,6 +66,7 @@ export default {
     async saveApplication() {
       var data = {
         url: this.application.url,
+        description: this.application.description,
         user_id: this.$store.getters['profile/me'].id,
         challenge_id: this.$route.params.id
       };
@@ -68,6 +80,7 @@ export default {
         });
         await this.$store.dispatch("alerts/success", "Uploaded successfully.")
         this.application.url = ""
+        this.application.description = ""
     },
   },
   mounted() {

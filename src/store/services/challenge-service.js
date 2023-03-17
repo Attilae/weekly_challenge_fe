@@ -64,6 +64,24 @@ function application(id) {
     });
 }
 
+function comments(id) {
+  return axios.get(`${url}/comments/${id}`)
+    .then(response => {
+      return {
+        comments: response.data
+      };
+    });
+}
+
+function saveComment(data) {
+  return axios.post(`${url}/comments`, data)
+    .then(response => {
+      return {
+        application: response.data
+      };
+    });
+}
+
 function saveApplication(data) {
   return axios.post(`${url}/application/create`, data)
     .then(response => {
@@ -95,5 +113,7 @@ export default {
     applications,
     application,
     saveApplication,
-    myApplications
+    myApplications,
+    saveComment,
+    comments
   };
