@@ -1,5 +1,5 @@
 <template>
-  <div class="md-layout">
+  <div>
     <div class="md-layout-item md-medium-size-100">
       <md-card>
         <md-card-header class="md-card-header-icon md-card-header-green">
@@ -67,7 +67,7 @@
             slot="inputs"
             style="margin-bottom: 28px"
           >
-            <md-icon>Description</md-icon>
+            <md-icon>article</md-icon>
             <label>Description...</label>
             <md-input v-model="comment.description" type="text" />
             <!--validation-error :errors="apiValidationErrors.url" /-->

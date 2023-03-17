@@ -6,7 +6,7 @@
       <md-card>
         <md-card-header class="md-card-header-icon">
           <div class="card-icon">
-            <md-icon>perm_identity</md-icon>
+            <md-icon>music_note</md-icon>
           </div>
           <h4 class="title">
             Apply to the challenge
@@ -20,8 +20,8 @@
             slot="inputs"
             style="margin-bottom: 28px"
           >
-            <md-icon>url</md-icon>
-            <label>Url...</label>
+            <md-icon>qr_code</md-icon>
+            <label>Embed code</label>
             <md-input v-model="application.url" type="text" />
             <!--validation-error :errors="apiValidationErrors.url" /-->
           </md-field>
@@ -30,7 +30,7 @@
             slot="inputs"
             style="margin-bottom: 28px"
           >
-            <md-icon>Description</md-icon>
+            <md-icon>article</md-icon>
             <label>Description...</label>
             <md-input v-model="application.description" type="text" />
             <!--validation-error :errors="apiValidationErrors.url" /-->
