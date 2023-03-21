@@ -197,14 +197,12 @@ function reinitScrollbar() {
 import TopNavbar from "./TopNavbar.vue";
 import ContentFooter from "./ContentFooter.vue";
 import MobileMenu from "./Extra/MobileMenu.vue";
-import UserMenu from "./Extra/UserMenu.vue";
 
 export default {
   components: {
     TopNavbar,
     ContentFooter,
-    MobileMenu,
-    UserMenu,
+    MobileMenu
   },
   data() {
     return {
